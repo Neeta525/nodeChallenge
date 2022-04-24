@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require ('fs');
-const inquirer =require ('inquirer');
+const inquirer = require ('inquirer');
+const generateMarkdown = reuire('./utils/generatemarkdown');
 
 
 // TODO: Create an array of questions for user input
@@ -14,13 +15,13 @@ const questions = () => {
       {
         type: 'input',
         name: 'description',
-        message: 'Write a description of your project.',
+        message: 'Describe your project.',
       },
       {
         type: 'list',
         name: 'license',
-        message: 'Chosse a license for you project.',
-        choices: ['MIT', 'Mozilla Public License 2.0', 'Academic Free License v3.0', 'The Unlicense', 'ISC']
+        message: 'Choose a license for you project.',
+        choices: ['MIT', 'Mozilla', 'WTFPL', 'Unlicense', 'ISC']
       },
       {
         type: 'input',
@@ -40,16 +41,16 @@ const questions = () => {
       {
         type: 'input',
         name: 'tests',
-        message: 'Provide instructions for testing this project',
+        message: 'Provide instructions for testing this project.',
       },
       {
         type: 'input',
-        name: 'questions',
+        name: 'github',
         message: 'Enter your Github username.',
       },
       {
         type: 'input',
-        name: 'questions',
+        name: 'email',
         message: 'Enter a valid email address.',
       },
       {
