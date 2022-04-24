@@ -91,8 +91,9 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-[GitHub](https://github.com/${data.github})
-${data.email}
+:pencil2: ${data.author} or
+:octocat: [${data.github}](https://github.com/${data.github}) or 
+:email: ${data.email}
 `;
 }
 
