@@ -1,12 +1,12 @@
 // TODO: Include packages needed for this application
 const fs = require ('fs');
 const inquirer = require ('inquirer');
-const generateMarkdown = reuire('./utils/generatemarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // TODO: Create an array of questions for user input
-const questions = () => {
-    return inquirer.prompt([
+const questions =
+    [
       {
         type: 'input',
         name: 'title',
@@ -58,24 +58,25 @@ const questions = () => {
         name: 'questions',
         message: 'Provide instructions on how to reach you with additional questions.',
       },
-    ]);
-  };
+    ];
 
 // TODO: Create a function to write README file
 function writeFile(fileName, data) {
-  fs.writeFileSync( fileName, generate(data))
+  fs.writeFileSync( fileName, generateMarkdown(data))
 }
 
-const init = () => {
-    promptUser()
-      // Use writeFileSync method to use promises instead of a callback function
-      .then((answers) => writeFile("READMEtest.md", answers))
-      .then(() => console.log('Successfully wrote to READMEtest.md'))
-      .catch((err) => console.error(err));
-  };
-
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer
+      .prompt(questions)
+      .then(function (answers) {
+        writeFile("README.md", generateMarkdown(answers));
+    }
+      // .then(() => console.log('Successfully wrote to README.md'))
+      // .catch((err) => console.error(err)));
+      )};
 
-// Function call to initialize app
+
+// Function call to initialize apps
 init();
+
