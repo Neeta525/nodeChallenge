@@ -55,15 +55,16 @@ const questions =
       },
       {
         type: 'input',
-        name: 'questions',
-        message: 'Provide instructions on how to reach you with additional questions.',
+        name: 'author',
+        message: 'Write your name.',
       },
     ];
 
 // TODO: Create a function to write README file
 function writeFile(fileName, data) {
-  fs.writeFileSync( fileName, generateMarkdown(data))
+  fs.writeFileSync( fileName, data);
 }
+
 
 // TODO: Create a function to initialize app
 function init() {
@@ -75,8 +76,7 @@ function init() {
       // .then(() => console.log('Successfully wrote to README.md'))
       // .catch((err) => console.error(err)));
       )};
-
-
+     
 // Function call to initialize apps
 init();
 

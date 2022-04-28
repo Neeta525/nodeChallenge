@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  switch (license) {
+  switch (license[0]) {
     case 'MIT':
       badge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
       break;
@@ -24,7 +24,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  switch (license) {
+  switch (license[0]) {
     case 'MIT':
       link = `[$(license)](https://opensource.org/licenses/MIT)`;
       break;
@@ -91,9 +91,10 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-:pencil2: ${data.author} or
-:octocat: [${data.github}](https://github.com/${data.github}) or 
-:email: ${data.email}
+'This is my name and contact info. If you have questions, please reach out!'
+- :pencil2: ${data.author} 
+- :octocat: [${data.github}](https://github.com/${data.github})
+- :email: ${data.email}
 `;
 }
 
