@@ -21,7 +21,8 @@ This project uses MIT
 Clone the repo to use it for yourself.
 
 ## Usage
-Here is a GIF of the prject in action
+Here is a screenshot
+![alt text](nodeChallengeSS.png)
 
 ## Contributing
 Please see contact info below to contribute.
