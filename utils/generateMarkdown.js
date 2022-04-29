@@ -3,19 +3,19 @@
 function renderLicenseBadge(license) {
   switch (license[0]) {
     case 'MIT':
-      badge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+      badge = `![license: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
       break;
     case 'MPL-2.0':
-      badge = `![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`;
+      badge = `![license: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`;
       break;
     case 'WTFPL':
-      badge = `![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)`;
+      badge = `![license: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)`;
       break;
     case 'Unlicense':
-      badge =`![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)`;
+      badge =`![license: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)`;
       break;
     case 'ISC':
-      badge = '![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)';
+      badge = '![license: ISC](https://img.shields.io/badge/License-ISC-blue.svg)';
       break;         
   };
   return badge;
