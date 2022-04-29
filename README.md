@@ -23,6 +23,8 @@ Clone the repo to use it for yourself.
 ## Usage
 Here is a screenshot
 ![alt text](nodeChallengeSS.png)
+Click on this link to view it in action
+[video](https://www.youtube.com/watch?v=-5aS0gH9zfg)
 
 ## Contributing
 Please see contact info below to contribute.
